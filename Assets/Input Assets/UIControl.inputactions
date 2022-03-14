@@ -1,0 +1,250 @@
+{
+    "name": "UIControl",
+    "maps": [
+        {
+            "name": "InventoryMap",
+            "id": "b124475e-9f29-41ef-940e-b207d8e22a92",
+            "actions": [
+                {
+                    "name": "UP",
+                    "type": "Button",
+                    "id": "5226c3da-76f0-40b8-b7f8-06e125f90ebb",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "DOWN",
+                    "type": "Button",
+                    "id": "98f97600-f6c5-41df-b818-cac8d5b2c9db",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "LEFT",
+                    "type": "Button",
+                    "id": "1f5d595d-81b9-4a73-ba14-df06b7b3c160",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "RIGHT",
+                    "type": "Button",
+                    "id": "4d4fa809-2ea3-4f32-a953-aa0e01f78117",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Close",
+                    "type": "Button",
+                    "id": "1bc9391e-9afd-491b-b76f-2ae9a18bc2d9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TYPER",
+                    "type": "Button",
+                    "id": "c330dab4-438a-4816-ac4d-b380b58580c0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "TYPEL",
+                    "type": "Button",
+                    "id": "3332afc3-e17b-4b4c-92d9-8c3fde1a1341",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "USE",
+                    "type": "Button",
+                    "id": "9adfcd62-702b-4d3e-bfc1-64f4b7d5a527",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "REMOVE",
+                    "type": "Button",
+                    "id": "12a7c5db-1d2f-42f6-b8fd-e30c1faa58a6",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "5c7107ae-c8d3-4e1b-bd01-d835c5f804eb",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UP",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "69f2532c-53c1-4da4-a0a6-a137fdeb6fd8",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "DOWN",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4c782264-931b-4421-9f15-265336151b79",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "LEFT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "28fa401c-92cc-49d5-a6c2-5165c7c51925",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "RIGHT",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "6b4e1baf-4de5-4bea-87c2-bfd2a6ad9ee1",
+                    "path": "<Keyboard>/i",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Close",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "472b857f-de91-46b3-8761-b55247481e94",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TYPER",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "8ae58c6f-ede0-4609-942e-768d0eaded96",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TYPEL",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "df512e4e-ffd9-40f5-a95e-209602eb2f50",
+                    "path": "<Keyboard>/k",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "USE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "372fa5c2-1ebb-42fc-9936-ab870ae380f8",
+                    "path": "<Keyboard>/l",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "REMOVE",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "DialougeMap",
+            "id": "ca06d762-b038-48da-9ab3-fd1a87384ab8",
+            "actions": [
+                {
+                    "name": "Next",
+                    "type": "Button",
+                    "id": "49b470a2-accf-409e-9c6e-744789b27d29",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Special1",
+                    "type": "Button",
+                    "id": "47b6f6e0-6968-4db3-b5d9-78ab93e3e176",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Special2",
+                    "type": "Button",
+                    "id": "f4521209-78b3-47c1-b100-7a60005b07be",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "14ec2eeb-714e-4f96-b773-95a32979756f",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Next",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "faee4b0b-36de-43c3-be16-46b6d060f9f3",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Special1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "02f976ea-3f56-4d32-a98f-3f5b7bc29f39",
+                    "path": "<Keyboard>/n",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Special2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
