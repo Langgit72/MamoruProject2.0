@@ -1,0 +1,560 @@
+fileFormatVersion: 2
+guid: 875369df7c8fe4e23acde00e9fbd10b9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2752084934357105416
+    second: Ninja slash base_0
+  - first:
+      213: 4272852110011036083
+    second: Ninja slash base_1
+  - first:
+      213: -5770443661244640407
+    second: Ninja slash base_2
+  - first:
+      213: -7268928842719463284
+    second: Ninja slash base_3
+  - first:
+      213: -2812528802495159281
+    second: Kunai_0
+  - first:
+      213: -8467434032929107562
+    second: Kunai_1
+  - first:
+      213: 4929822306506990778
+    second: Kunai_2
+  - first:
+      213: 3467520826912778777
+    second: Kunai_3
+  - first:
+      213: 2993538259034487944
+    second: Kunai_4
+  - first:
+      213: 6320981820891921061
+    second: Kunai_5
+  - first:
+      213: -381674310069570246
+    second: Kunai_6
+  - first:
+      213: 2117380191076551494
+    second: Kunai_7
+  - first:
+      213: 6008577270691214767
+    second: Kunai_8
+  - first:
+      213: -6827953828197989294
+    second: Kunai_9
+  - first:
+      213: 6608636810037045428
+    second: Kunai_10
+  - first:
+      213: -5722219844792121574
+    second: Kunai_11
+  - first:
+      213: -7460443454871371927
+    second: Kunai_12
+  - first:
+      213: 1156690928926402085
+    second: Kunai_13
+  - first:
+      213: 2513515160662659428
+    second: Kunai_14
+  - first:
+      213: -7115827917354811482
+    second: Kunai_15
+  - first:
+      213: -2323261092338103306
+    second: Kunai_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kunai_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 139
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04a8be94f3e7f8d0800000000000000
+      internalID: -2812528802495159281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 139
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69115340c91ad7a80800000000000000
+      internalID: -8467434032929107562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 139
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab46529b44f3a6440800000000000000
+      internalID: 4929822306506990778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 139
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91aa76302db1f1030800000000000000
+      internalID: 3467520826912778777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_4
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 107
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88cba47af2f2b8920800000000000000
+      internalID: 2993538259034487944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 107
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aaf6f1e973a8b750800000000000000
+      internalID: 6320981820891921061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_6
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 111
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a353968bc3504baf0800000000000000
+      internalID: -381674310069570246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_7
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 111
+        width: 2
+        height: 2
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64b019fb012726d10800000000000000
+      internalID: 2117380191076551494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_8
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 77
+        width: 3
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa539016131c26350800000000000000
+      internalID: 6008577270691214767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_9
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 72
+        width: 17
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2548d775b2c3e31a0800000000000000
+      internalID: -6827953828197989294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_10
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 68
+        width: 25
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b824d72a2896bb50800000000000000
+      internalID: 6608636810037045428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_11
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 67
+        width: 18
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1789786e579690b0800000000000000
+      internalID: -5722219844792121574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_12
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 40
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ff085743e277890800000000000000
+      internalID: -7460443454871371927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_13
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 41
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 526239d75446d0010800000000000000
+      internalID: 1156690928926402085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_14
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 44
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4615bd0b8bcc1e220800000000000000
+      internalID: 2513515160662659428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_15
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 46
+        width: 9
+        height: 3
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af324fd5308f3d90800000000000000
+      internalID: -7115827917354811482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kunai_16
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 11
+        width: 2
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb83be785e12cfd0800000000000000
+      internalID: -2323261092338103306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kunai_7: 2117380191076551494
+      Kunai_2: 4929822306506990778
+      Kunai_0: -2812528802495159281
+      Kunai_8: 6008577270691214767
+      Kunai_10: 6608636810037045428
+      Kunai_9: -6827953828197989294
+      Kunai_12: -7460443454871371927
+      Kunai_1: -8467434032929107562
+      Kunai_3: 3467520826912778777
+      Kunai_15: -7115827917354811482
+      Kunai_6: -381674310069570246
+      Kunai_11: -5722219844792121574
+      Kunai_14: 2513515160662659428
+      Kunai_13: 1156690928926402085
+      Kunai_16: -2323261092338103306
+      Kunai_4: 2993538259034487944
+      Kunai_5: 6320981820891921061
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

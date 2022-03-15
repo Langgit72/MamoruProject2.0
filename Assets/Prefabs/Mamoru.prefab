@@ -230,7 +230,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1842630119
-  m_SortingLayer: 2
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: -5358858230826168472, guid: bad6acf56fa0540b28301a1bda3d6cb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -305,8 +305,8 @@ MonoBehaviour:
   grounded: 1
   k_GroundedRadius: 0
   isJumping: 0
-  m_WhatIsGround: 7
-  m_WhatIsPlatform: 11
+  m_WhatIsGround: 8
+  m_WhatIsPlatform: 9
   coyoteGroundedTime: 0.2
   cutMultiplier: 2
   coyoteJumpTime: 0.1

@@ -1,0 +1,611 @@
+fileFormatVersion: 2
+guid: 74dbb75a7407e4048b28c8fde24e9a79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6297562153260020503
+    second: Samurai Swing 1_0
+  - first:
+      213: -3558207846083325733
+    second: Samurai Swing 1_1
+  - first:
+      213: -2029534949375253871
+    second: Samurai Swing 1_2
+  - first:
+      213: 1020806468898493306
+    second: Samurai Swing 1_3
+  - first:
+      213: 1774336356686931111
+    second: Samurai Swing 1_4
+  - first:
+      213: -3520289600121448104
+    second: Samurai Swing 1_5
+  - first:
+      213: -6079615098525908677
+    second: Samurai Swing 1_6
+  - first:
+      213: 7226181644322101549
+    second: Samurai Swing 1_7
+  - first:
+      213: 594905275668325939
+    second: Samurai Swing 1_8
+  - first:
+      213: 8627212649776279451
+    second: Samurai Swing 1_9
+  - first:
+      213: -2607765821139029293
+    second: Samurai Swing 1_10
+  - first:
+      213: 3395469273251804320
+    second: Samurai Swing 1_11
+  - first:
+      213: 8269560404367883694
+    second: Samurai Swing 1_12
+  - first:
+      213: -5088507318571987586
+    second: Samurai Swing 1_13
+  - first:
+      213: 4400372208035633429
+    second: Samurai Swing 1_14
+  - first:
+      213: -8889397661694744643
+    second: Samurai Swing 1_15
+  - first:
+      213: 8512493539250657179
+    second: Samurai Swing 1_16
+  - first:
+      213: 8810962207499145178
+    second: Samurai Swing 1_17
+  - first:
+      213: -8005505314168366180
+    second: Samurai Swing 1_18
+  - first:
+      213: -5502901298342158369
+    second: Samurai Swing 1_19
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Samurai Swing 1_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 161
+        width: 19
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec0ef766909a98a0800000000000000
+      internalID: -6297562153260020503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 161
+        width: 16
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd01231f0d4be9ec0800000000000000
+      internalID: -3558207846083325733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 161
+        width: 16
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1926f3b67b4a5d3e0800000000000000
+      internalID: -2029534949375253871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_3
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 129
+        width: 16
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a739d133312aa2e00800000000000000
+      internalID: 1020806468898493306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_4
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 129
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4a26cf385bf9810800000000000000
+      internalID: 1774336356686931111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_5
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 129
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 859524e824b652fc0800000000000000
+      internalID: -3520289600121448104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 97
+        width: 21
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b310341774ed0aba0800000000000000
+      internalID: -6079615098525908677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 97
+        width: 35
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2954486bed884460800000000000000
+      internalID: 7226181644322101549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_8
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 97
+        width: 31
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336673f3237814800800000000000000
+      internalID: 594905275668325939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_9
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 65
+        width: 25
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9febaf22340ab770800000000000000
+      internalID: 8627212649776279451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_10
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 65
+        width: 21
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d27a9d5dca5fcbd0800000000000000
+      internalID: -2607765821139029293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_11
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 65
+        width: 21
+        height: 26
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a47de560512f1f20800000000000000
+      internalID: 3395469273251804320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_12
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 33
+        width: 25
+        height: 25
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eadbbfeaf5163c270800000000000000
+      internalID: 8269560404367883694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_13
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 39
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d8a87cd8df169b0800000000000000
+      internalID: -5088507318571987586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_14
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 33
+        width: 26
+        height: 23
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51917738533411d30800000000000000
+      internalID: 4400372208035633429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 39
+        width: 7
+        height: 12
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db72f7bbce382a480800000000000000
+      internalID: -8889397661694744643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_16
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 33
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97d7d7d5c3722670800000000000000
+      internalID: 8512493539250657179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 1
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfc06bf173d64a70800000000000000
+      internalID: 8810962207499145178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_18
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 1
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b1e7de45bb6e090800000000000000
+      internalID: -8005505314168366180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Samurai Swing 1_19
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1
+        width: 17
+        height: 28
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdf974ebc64c1a3b0800000000000000
+      internalID: -5502901298342158369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Samurai Swing 1_6: -6079615098525908677
+      Samurai Swing 1_18: -8005505314168366180
+      Samurai Swing 1_0: -6297562153260020503
+      Samurai Swing 1_8: 594905275668325939
+      Samurai Swing 1_10: -2607765821139029293
+      Samurai Swing 1_3: 1020806468898493306
+      Samurai Swing 1_9: 8627212649776279451
+      Samurai Swing 1_7: 7226181644322101549
+      Samurai Swing 1_15: -8889397661694744643
+      Samurai Swing 1_2: -2029534949375253871
+      Samurai Swing 1_1: -3558207846083325733
+      Samurai Swing 1_13: -5088507318571987586
+      Samurai Swing 1_16: 8512493539250657179
+      Samurai Swing 1_11: 3395469273251804320
+      Samurai Swing 1_19: -5502901298342158369
+      Samurai Swing 1_14: 4400372208035633429
+      Samurai Swing 1_4: 1774336356686931111
+      Samurai Swing 1_12: 8269560404367883694
+      Samurai Swing 1_5: -3520289600121448104
+      Samurai Swing 1_17: 8810962207499145178
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,573 @@
+fileFormatVersion: 2
+guid: c621e36dd67844fb999b259a22149db7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6051580924715603674
+    second: Ninja chain strike framework_0
+  - first:
+      213: 6451045432402356336
+    second: Ninja chain strike framework_1
+  - first:
+      213: 1379020644665977644
+    second: Ninja chain strike framework_2
+  - first:
+      213: -701923119412448505
+    second: Ninja chain strike framework_3
+  - first:
+      213: -3879685384571113732
+    second: Ninja chain strike framework_4
+  - first:
+      213: 8399675964329247144
+    second: Ninja chain strike framework_5
+  - first:
+      213: 1174489784449015390
+    second: Ninja chain strike framework_6
+  - first:
+      213: -6587778117448334274
+    second: Ninja chain strike framework_7
+  - first:
+      213: 3852849332753545358
+    second: Ninja chain strike framework_8
+  - first:
+      213: 4451891782733128043
+    second: Ninja chain strike framework_9
+  - first:
+      213: 5087957696617851412
+    second: Ninja chain strike framework_10
+  - first:
+      213: 4379643285850484232
+    second: Ninja chain strike framework_11
+  - first:
+      213: -7332469781552753203
+    second: Ninja chain strike framework_12
+  - first:
+      213: -8540619722408005795
+    second: Ninja chain strike framework_13
+  - first:
+      213: -991331636505584818
+    second: Ninja chain strike framework_14
+  - first:
+      213: -1611378709713951036
+    second: Ninja chain strike framework_15
+  - first:
+      213: 2515288215552959919
+    second: Ninja chain strike framework_16
+  - first:
+      213: 5393472159746467481
+    second: Ninja chain strike framework_17
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Ninja chain strike framework_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 166
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 629ebcc2637740ca0800000000000000
+      internalID: -6051580924715603674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 166
+        width: 17
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 078af3444a7b68950800000000000000
+      internalID: 6451045432402356336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_2
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 166
+        width: 16
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2bee3f48f3432310800000000000000
+      internalID: 1379020644665977644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 134
+        width: 17
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70379cf44a44246f0800000000000000
+      internalID: -701923119412448505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_4
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 134
+        width: 18
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe2d5cb2b6982ac0800000000000000
+      internalID: -3879685384571113732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 134
+        width: 21
+        height: 24
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a14b3249c4a19470800000000000000
+      internalID: 8399675964329247144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 102
+        width: 31
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e986a7c30ac4010800000000000000
+      internalID: 1174489784449015390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_7
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 102
+        width: 53
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e34866aa4b28394a0800000000000000
+      internalID: -6587778117448334274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 102
+        width: 42
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8830eb0e02187530800000000000000
+      internalID: 3852849332753545358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 70
+        width: 22
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61e9404dfb48cd30800000000000000
+      internalID: 4451891782733128043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_10
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 70
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41a2f13619e0c9640800000000000000
+      internalID: 5087957696617851412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_11
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 70
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80eea083d5e97cc30800000000000000
+      internalID: 4379643285850484232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 38
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc513403595dd3a90800000000000000
+      internalID: -7332469781552753203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_13
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 38
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5fec24dc9f997980800000000000000
+      internalID: -8540619722408005795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_14
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 38
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4b5a7ff0251e32f0800000000000000
+      internalID: -991331636505584818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_15
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 6
+        width: 12
+        height: 17
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c66fd8d99b33a9e0800000000000000
+      internalID: -1611378709713951036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_16
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 6
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa5a2c33e4918e220800000000000000
+      internalID: 2515288215552959919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Ninja chain strike framework_17
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 6
+        width: 12
+        height: 16
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996a5ab7a5679da40800000000000000
+      internalID: 5393472159746467481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 42a2b98290fe648d8a08762bb6ea8aca
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Ninja chain strike framework_2: 1379020644665977644
+      Ninja chain strike framework_13: -8540619722408005795
+      Ninja chain strike framework_17: 5393472159746467481
+      Ninja chain strike framework_6: 1174489784449015390
+      Ninja chain strike framework_9: 4451891782733128043
+      Ninja chain strike framework_4: -3879685384571113732
+      Ninja chain strike framework_16: 2515288215552959919
+      Ninja chain strike framework_8: 3852849332753545358
+      Ninja chain strike framework_10: 5087957696617851412
+      Ninja chain strike framework_0: -6051580924715603674
+      Ninja chain strike framework_3: -701923119412448505
+      Ninja chain strike framework_15: -1611378709713951036
+      Ninja chain strike framework_11: 4379643285850484232
+      Ninja chain strike framework_14: -991331636505584818
+      Ninja chain strike framework_12: -7332469781552753203
+      Ninja chain strike framework_7: -6587778117448334274
+      Ninja chain strike framework_1: 6451045432402356336
+      Ninja chain strike framework_5: 8399675964329247144
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

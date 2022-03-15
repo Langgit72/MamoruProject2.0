@@ -1,0 +1,448 @@
+fileFormatVersion: 2
+guid: 524288b50bd44402fa562e0093a97055
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8176404026665953519
+    second: Kusarigama strike_0
+  - first:
+      213: -8511571892372211074
+    second: Kusarigama strike_1
+  - first:
+      213: -7361716234133650789
+    second: Kusarigama strike_2
+  - first:
+      213: -937094408621200018
+    second: Kusarigama strike_3
+  - first:
+      213: 6437156134343158587
+    second: Kusarigama strike_4
+  - first:
+      213: 4443380227089934262
+    second: Kusarigama strike_5
+  - first:
+      213: 998964302707392444
+    second: Kusarigama strike_6
+  - first:
+      213: -1566709377291396350
+    second: Kusarigama strike_7
+  - first:
+      213: -448582642906288479
+    second: Kusarigama strike_8
+  - first:
+      213: -4550534821629895019
+    second: Kusarigama strike_9
+  - first:
+      213: 4824403734611481946
+    second: Kusarigama strike_10
+  - first:
+      213: 5998951671176319780
+    second: Kusarigama strike_11
+  - first:
+      213: -8109733156937373836
+    second: Kusarigama strike_12
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kusarigama strike_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 139
+        width: 13
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe86f7d442c687170800000000000000
+      internalID: 8176404026665953519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_1
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 138
+        width: 15
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a74fac572d0e980800000000000000
+      internalID: -8511571892372211074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_2
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 138
+        width: 13
+        height: 20
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92cc3fc61ee5d990800000000000000
+      internalID: -7361716234133650789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_3
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 107
+        width: 15
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6de02da995cef2f0800000000000000
+      internalID: -937094408621200018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 107
+        width: 18
+        height: 19
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b204f066f555950800000000000000
+      internalID: 6437156134343158587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_5
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 108
+        width: 29
+        height: 12
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b7a0b546ce0aad30800000000000000
+      internalID: 4443380227089934262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_6
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 76
+        width: 50
+        height: 6
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf7b269db80ddd00800000000000000
+      internalID: 998964302707392444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_7
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 75
+        width: 41
+        height: 7
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20bd5444f1ee14ae0800000000000000
+      internalID: -1566709377291396350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_8
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 74
+        width: 19
+        height: 8
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ae2a25867056c9f0800000000000000
+      internalID: -448582642906288479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_9
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 42
+        width: 11
+        height: 6
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e54b280b049d0c0800000000000000
+      internalID: -4550534821629895019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_10
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 42
+        width: 11
+        height: 6
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a55d596c2a9b3f240800000000000000
+      internalID: 4824403734611481946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_11
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 41
+        width: 11
+        height: 6
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4235339d2ce804350800000000000000
+      internalID: 5998951671176319780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kusarigama strike_12
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 10
+        width: 11
+        height: 6
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4776a8539a0747f80800000000000000
+      internalID: -8109733156937373836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 8a7a268a179c34706b18180f78b930e0
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kusarigama strike_11: 5998951671176319780
+      Kusarigama strike_10: 4824403734611481946
+      Kusarigama strike_5: 4443380227089934262
+      Kusarigama strike_2: -7361716234133650789
+      Kusarigama strike_0: 8176404026665953519
+      Kusarigama strike_12: -8109733156937373836
+      Kusarigama strike_7: -1566709377291396350
+      Kusarigama strike_6: 998964302707392444
+      Kusarigama strike_4: 6437156134343158587
+      Kusarigama strike_1: -8511571892372211074
+      Kusarigama strike_8: -448582642906288479
+      Kusarigama strike_3: -937094408621200018
+      Kusarigama strike_9: -4550534821629895019
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
