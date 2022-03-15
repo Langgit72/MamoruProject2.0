@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background Unlit
+    uniqueID: 1905832241
+    locked: 0
+  - name: Sun
+    uniqueID: 2413568521
+    locked: 0
+  - name: Moon
+    uniqueID: 247101883
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

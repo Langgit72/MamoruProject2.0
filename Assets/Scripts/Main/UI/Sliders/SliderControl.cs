@@ -13,6 +13,7 @@ public class SliderControl : MonoBehaviour
     {
         // Set up references
         m_slider = GetComponent<Slider>();
+        m_value = Player.instance;
         
         
     }

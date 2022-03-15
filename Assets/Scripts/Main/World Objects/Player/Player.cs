@@ -95,7 +95,7 @@ public class Player : MonoBehaviour
         #region Reference definitions
 
         bottomText = BottomController.instance.GetComponent<TMP_Text>();
-        GameManager.instance.player = this;
+        //GameManager.instance.player = this;
         m_Anim = gameObject.GetComponent<Animator>();
         weapon = weapon_Anim.gameObject;
         weaponPositionX = weapon.transform.localPosition.x;
