@@ -24,10 +24,10 @@ MonoBehaviour:
   _spriteAlignmentCustomX: 0
   _spriteAlignmentCustomY: 0
   _spritesTargetLocation:
-    _locationType: 1
+    _locationType: 0
     _globalDirectory: Assets
   _animationsTargetLocation:
-    _locationType: 1
+    _locationType: 0
     _globalDirectory: Assets
   _animationControllersTargetLocation:
     _locationType: 0
