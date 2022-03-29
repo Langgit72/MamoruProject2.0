@@ -71,14 +71,15 @@ public class InputManager : MonoBehaviour
         m_UIController = new UIControl();
         m_player_controller.Enable();
         types = new Inventory.InventoryMode[] {Inventory.InventoryMode.weapons, Inventory.InventoryMode.food, Inventory.InventoryMode.clothing, Inventory.InventoryMode.misc };
-
+    
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        Debug.Log("Input system: " + m_player_controller.MotionControl.Jump);
         m_player_controller.MotionControl.Jump.started += context => jumpInput = true;
+        Debug.Log("Jump inout: " + jumpInput);
         m_player_controller.MotionControl.Jump.canceled += context => jumpInput = false;
         m_player_controller.MotionControl.Move.started += context => moveInput = context.ReadValue<float>();
         m_player_controller.MotionControl.Move.canceled += context => moveInput = 0f;

@@ -25,8 +25,15 @@ public class NPC : Interactable
         activeDialouge.my_speaker = this;
         player = Player.instance.m_Controller.GetComponent<Transform>();
         base.Update();
-        sp1ID = activeDialouge.reponses[0];
-        sp2ID = activeDialouge.reponses[1];
+        if (activeDialouge.reponses.Length > 0)
+        {
+            sp1ID = activeDialouge.reponses[0];
+            if (activeDialouge.reponses.Length > 1)
+            {
+                sp2ID = activeDialouge.reponses[1];
+            }
+         }
+
         /*if (sp1ID != "null") {
            
         }

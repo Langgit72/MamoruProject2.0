@@ -120,7 +120,7 @@ public class WalkingAI : MonoBehaviour
             {
                 if (!hasAttacked)
                 {
-                    players[i].gameObject.GetComponent<Player>().TakeDamage(5, m_sprite.flipX);
+                    Player.instance.TakeDamage(5, m_sprite.flipX);
                     hasAttacked = true;
                     StartCoroutine(Damage());
                 }

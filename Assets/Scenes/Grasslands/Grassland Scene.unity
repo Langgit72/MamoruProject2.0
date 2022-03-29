@@ -11921,7 +11921,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 2, y: 0.64}
+  m_Size: {x: 47.02, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -13791,7 +13791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropOff: 2
-  dayLength: 1440
+  dayLength: 144
   mod1: 42.5
   mod2: 28
   startTime: 1020

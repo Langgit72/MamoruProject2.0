@@ -96,7 +96,7 @@ public class Player : MonoBehaviour
 
         bottomText = BottomController.instance.GetComponent<TMP_Text>();
         //GameManager.instance.player = this;
-        m_Anim = gameObject.GetComponent<Animator>();
+        m_Anim = Player.instance.m_Anim; 
         weapon = weapon_Anim.gameObject;
         weaponPositionX = weapon.transform.localPosition.x;
         #endregion
@@ -248,7 +248,6 @@ public class Player : MonoBehaviour
 
     public void Interact() 
     {
-        Debug.Log("interacting");
         #region Interaction Management
         Vector3 interactPosition = m_Controller.GetComponent<Transform>().position;
         Collider2D[] interactables = Physics2D.OverlapCircleAll(interactPosition, 10f, LayerMask.GetMask("Items", "NPC")); //All npcs are items currently being interacted with
