@@ -30,12 +30,12 @@ public class Item : Interactable
 
     protected virtual private void Awake()
     {
-
+        m_player = Player.instance;
     }
     new protected virtual void Start()
     {
         base.Start();
-        m_player = GameManager.instance.player;
+  
 
         if (!inInventory)
         {

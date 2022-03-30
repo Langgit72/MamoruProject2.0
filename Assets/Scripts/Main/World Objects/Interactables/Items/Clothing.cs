@@ -18,8 +18,8 @@ public class Clothing : Item
 
     public override void Use()
     {
-        Debug.Log("well yes" + m_anim + "but actually" + m_player.gameObject.GetComponent<Animator>().runtimeAnimatorController);
-        m_player.gameObject.GetComponent<Animator>().runtimeAnimatorController = m_anim;
+        Debug.Log("well yes" + m_anim + "but actually" + m_player.m_Controller.gameObject.GetComponent<Animator>().runtimeAnimatorController);
+        m_player.m_Controller.gameObject.GetComponent<Animator>().runtimeAnimatorController = m_anim;
         
 
     }
