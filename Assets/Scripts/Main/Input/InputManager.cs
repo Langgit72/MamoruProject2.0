@@ -78,9 +78,9 @@ public class InputManager : MonoBehaviour
     void Update()
     {
         Debug.Log("Input system: " + m_player_controller.MotionControl.Jump);
-        m_player_controller.MotionControl.Jump.started += context => jumpInput = true;
-        Debug.Log("Jump inout: " + jumpInput);
-        m_player_controller.MotionControl.Jump.canceled += context => jumpInput = false;
+        //m_player_controller.MotionControl.Jump.started += context => StartCoroutine(Jump());
+        m_player_controller.MotionControl.Jump.started += context => StartJump();
+        m_player_controller.MotionControl.Jump.canceled += context => EndJump();
         m_player_controller.MotionControl.Move.started += context => moveInput = context.ReadValue<float>();
         m_player_controller.MotionControl.Move.canceled += context => moveInput = 0f;
         m_player_controller.MotionControl.Fall.started += context => Physics2D.IgnoreLayerCollision(m_WhatIsPlayer, m_WhatIsPlatform, true); 
@@ -342,6 +342,30 @@ public class InputManager : MonoBehaviour
 
 
     }
+
+    private void StartJump()
+    {
+        jumpInput = true;
+        StartCoroutine(Jump());
+
+    }
+
+    private void EndJump() {
+        jumpInput = false;
+        StartCoroutine(Ground());//Physics2D.IgnoreLayerCollision(m_WhatIsPlayer, m_WhatIsPlatform, false);
+
+    }
+
+
+
+
+    IEnumerator Jump()
+    {
+        yield return new WaitForSeconds(0.25f);
+        Physics2D.IgnoreLayerCollision(m_WhatIsPlayer, m_WhatIsPlatform, true);
+    }
+
+
 
     IEnumerator Ground()
     { 
