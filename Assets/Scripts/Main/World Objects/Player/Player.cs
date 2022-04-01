@@ -96,9 +96,7 @@ public class Player : MonoBehaviour
 
         bottomText = BottomController.instance.GetComponent<TMP_Text>();
         //GameManager.instance.player = this;
-        m_Anim = Player.instance.m_Anim; 
-        weapon = weapon_Anim.gameObject;
-        weaponPositionX = weapon.transform.localPosition.x;
+        //m_Anim = Player.instance.m_Anim; 
         #endregion
 
         #region Stat Initialization
@@ -116,15 +114,18 @@ public class Player : MonoBehaviour
         #endregion
 
         m_Transform = GetComponent<Transform>();
-        m_input = InputManager.instance;
-        m_input.drop_point = this;
+
+     
 
 
     }
 
     private void Start()
     {
-   
+        m_input = InputManager.instance;
+        m_input.drop_point = this;
+        weapon = weapon_Anim.gameObject;
+        weaponPositionX = weapon.transform.localPosition.x;
     }
 
     private void Update()

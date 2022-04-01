@@ -11,6 +11,7 @@ public class TrackX : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = Player.instance.gameObject.transform;
         m_transform = gameObject.GetComponent<Transform>();
         if (!shiftConstant)
         {

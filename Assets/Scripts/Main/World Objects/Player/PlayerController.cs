@@ -47,27 +47,33 @@ public class PlayerController : MonoBehaviour
     public InputManager m_input;
     public SpriteRenderer m_Sprite;
     public Animator m_anim;
+    public Animator weapon_anim;
     public MotionState motion;
+    public Transform attackpos;
 
 
     private void Awake()
     {
-
+  
     }
 
     private void Start()
     {
-        Player.instance.m_Controller = this;
+        Player.instance.m_Controller = gameObject.GetComponent<PlayerController>();
         Player.instance.m_Sprite = m_Sprite;
-
         m_input = InputManager.instance;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         m_Sprite = gameObject.GetComponent<SpriteRenderer>();
+        Player.instance.m_Anim = m_anim;
+        Player.instance.weapon_Anim = weapon_anim;
+        Player.instance.attackCollider = attackpos;
+        DayNightCycle.instance.center = gameObject.transform;
+
     }
 
     private void Update()
     {
-        m_anim.runtimeAnimatorController = Player.instance.m_Anim.runtimeAnimatorController;
+        //m_anim.runtimeAnimatorController = Player.instance.m_Anim.runtimeAnimatorController;
 
     }
 
@@ -192,7 +198,6 @@ public class PlayerController : MonoBehaviour
         if ((lastJumpTime > 0 && lastGroundedTime > 0) && !isJumping)
         {
             isJumping = true;
-            
             m_Rigidbody2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             lastJumpTime = coyoteJumpTime;
 

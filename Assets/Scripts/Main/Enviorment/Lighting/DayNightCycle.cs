@@ -40,6 +40,7 @@ public class DayNightCycle : MonoBehaviour
 
     public Transform center;
 
+
     #region Unity Methods
     void Awake()
     {
@@ -54,14 +55,16 @@ public class DayNightCycle : MonoBehaviour
             Destroy(gameObject);
             return;
         }
-
+        DontDestroyOnLoad(this.gameObject);
         #endregion
     }
 
     void Start()
     {
-        og_day = day.color;
-        og_night = night.color;
+        if (day!=null) {
+            og_day = day.color;
+            og_night = night.color;
+        }
         og_day.a = 0;
         og_night.a = 255;
         moonPhases = moon.GetComponent<Phases>();
@@ -86,20 +89,29 @@ public class DayNightCycle : MonoBehaviour
         float sunRise = calculateSunrise(m_Time);
 
 
-        og_day.a = 1 - sunRise; //blue increases with the sunrise
-        og_night.a = sunRise;
-        og_day.b = 1 - sunRise * .75f; //blues and greens decreases with the sunrise.sunset
-        og_day.g = 1 - sunRise * .75f;
-        og_day.r = sunRise * .85f; //reds increase with the sunrise.sunset
+        if (day!=null) {
+            day.color = og_day;
+            night.color = og_night;
 
-        day.color = og_day;
-        night.color = og_night;
+
+            og_day.a = 1 - sunRise; //blue increases with the sunrise
+            og_night.a = sunRise;
+            og_day.b = 1 - sunRise * .75f; //blues and greens decreases with the sunrise.sunset
+            og_day.g = 1 - sunRise * .75f;
+            og_day.r = sunRise * .85f; //reds increase with the sunrise.sunset
+        }
+
         #endregion
 
         float specialTime = m_Time + dayLength / 24;
         #region Sun and Moon Animation
-        moon.position = new Vector3(center.position.x + Mathf.Sin((specialTime) * multiplier / dayLength) * mod1, center.position.y + Mathf.Cos((specialTime) * multiplier / dayLength) * mod2, moon.position.z);
-        sun.position = new Vector3(center.position.x+Mathf.Sin((specialTime + dayLength / 2) * multiplier / dayLength) * mod1, center.position.y+Mathf.Cos((specialTime + dayLength / 2) * multiplier / dayLength) * mod2, sun.position.z);
+        if (moon != null&&sun!=null)
+        {
+            moon.position = new Vector3(center.position.x + Mathf.Sin((specialTime) * multiplier / dayLength) * mod1, center.position.y + Mathf.Cos((specialTime) * multiplier / dayLength) * mod2, moon.position.z);
+            sun.position = new Vector3(center.position.x + Mathf.Sin((specialTime + dayLength / 2) * multiplier / dayLength) * mod1, center.position.y + Mathf.Cos((specialTime + dayLength / 2) * multiplier / dayLength) * mod2, sun.position.z);
+        }
+       
+
 
 
       

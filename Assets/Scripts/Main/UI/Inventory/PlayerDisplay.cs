@@ -12,12 +12,13 @@ public class PlayerDisplay : MonoBehaviour
 
 	void Awake()
 	{
-		m_sprite = player.GetComponent<SpriteRenderer>();
 		image = GetComponent<Image>();
 	}
 
-	void Update()
+
+    void Update()
 	{
+		player = Player.instance.m_Controller.gameObject;
 		m_sprite = player.GetComponent<SpriteRenderer>();
 		image = GetComponent<Image>();
 		image.sprite = m_sprite.sprite;

@@ -29,6 +29,7 @@ public class WalkingAI : MonoBehaviour
         m_sprite = gameObject.GetComponent<SpriteRenderer>();
         m_Rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         m_Anim = GetComponent<Animator>();
+        m_player = Player.instance.m_Controller.transform;
 
     }
 

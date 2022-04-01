@@ -74,6 +74,11 @@ public class InputManager : MonoBehaviour
     
     }
 
+    private void Start()
+    {
+        Player.instance.m_input = this;
+    }
+
     // Update is called once per frame
     void Update()
     {
