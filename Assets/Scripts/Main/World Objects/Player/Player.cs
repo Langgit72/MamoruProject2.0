@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
     public Transform m_Transform;
 
     public Animator m_Anim;  // Reference to the player's animator component.
+    public RuntimeAnimatorController m_aniController;
     public Animator weapon_Anim; // Reference to the player weapon animator component.
 
     public SpriteRenderer m_Sprite; // Reference to the player's sprite component(variable).
@@ -127,6 +128,7 @@ public class Player : MonoBehaviour
         weapon = weapon_Anim.gameObject;
         weaponPositionX = weapon.transform.localPosition.x;
     }
+    
 
     private void Update()
     {

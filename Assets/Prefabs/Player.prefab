@@ -5183,7 +5183,7 @@ MonoBehaviour:
   isJumping: 0
   m_WhatIsGround: 8
   m_WhatIsPlatform: 9
-  coyoteGroundedTime: 0.2
+  coyoteGroundedTime: 0
   cutMultiplier: 2
   coyoteJumpTime: 0.1
   acceleration: 1

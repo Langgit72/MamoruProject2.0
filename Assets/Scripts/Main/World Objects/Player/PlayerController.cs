@@ -47,6 +47,7 @@ public class PlayerController : MonoBehaviour
     public InputManager m_input;
     public SpriteRenderer m_Sprite;
     public Animator m_anim;
+
     public Animator weapon_anim;
     public MotionState motion;
     public Transform attackpos;
@@ -64,16 +65,16 @@ public class PlayerController : MonoBehaviour
         m_input = InputManager.instance;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         m_Sprite = gameObject.GetComponent<SpriteRenderer>();
-        Player.instance.m_Anim = m_anim;
         Player.instance.weapon_Anim = weapon_anim;
         Player.instance.attackCollider = attackpos;
         DayNightCycle.instance.center = gameObject.transform;
+        m_anim.runtimeAnimatorController = Player.instance.m_aniController;
 
     }
 
     private void Update()
     {
-        //m_anim.runtimeAnimatorController = Player.instance.m_Anim.runtimeAnimatorController;
+        Player.instance.m_aniController = m_anim.runtimeAnimatorController;
 
     }
 

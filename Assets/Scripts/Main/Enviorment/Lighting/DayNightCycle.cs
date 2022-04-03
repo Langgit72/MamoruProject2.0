@@ -14,6 +14,8 @@ public class DayNightCycle : MonoBehaviour
     public float mod1 = 70f;
     public float mod2 = 20f;
     public float startTime;
+    public int phaseCount;
+    bool phaseUpdated;
 
 
     public string period="Night"; //Clock strings
@@ -61,6 +63,7 @@ public class DayNightCycle : MonoBehaviour
 
     void Start()
     {
+
         if (day!=null) {
             og_day = day.color;
             og_night = night.color;
@@ -73,6 +76,18 @@ public class DayNightCycle : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (moon == null|| sun == null) {
+            moon = GameObject.Find("Moon").transform;
+            moon.gameObject.GetComponent<Phases>().phaseNumber = phaseCount;
+            sun = GameObject.Find("Sun").transform;
+        }
+        if (day== null || night == null)
+        {
+            day = GameObject.Find("Day").GetComponent<SpriteRenderer>();
+            night = GameObject.Find("Night Bottom").GetComponent<SpriteRenderer>();
+        }
+        moonPhases.phaseNumber = phaseCount;
+
         #region Day Light Intensity and Sky Apperance
         /*
         if (period == "Dusk" || period == "Night")
@@ -146,6 +161,7 @@ public class DayNightCycle : MonoBehaviour
             }
 
             period = "Day";
+            phaseUpdated = false;
             if (!AudioController.instance.jobTable.Contains(AudioType.ST_03))
             {AudioController.instance.LoopAudio(AudioType.ST_03);
             }
@@ -187,14 +203,21 @@ public class DayNightCycle : MonoBehaviour
     }
     void updatePhase()
     {
-        if (moonPhases.phaseNumber + 1 == moonPhases.phases.Count)
-        {
-            moonPhases.phaseNumber = 0;
+        if (!phaseUpdated) {
+
+            if (phaseCount + 1 == moonPhases.phases.Count)
+            {
+                phaseCount = 0;
+            }
+            else
+            {
+                phaseCount += 1;
+            }
+            phaseUpdated = true;
+            
         }
-        else
-        {
-            moonPhases.phaseNumber += 1;
-        }
+
+
     }
     #endregion
 }
