@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
     public Transform attackpos;
 
 
-    private void Awake()
+    private void Awake() 
     {
   
     }
@@ -227,6 +227,8 @@ public class PlayerController : MonoBehaviour
         float accelRate = (Mathf.Abs(targetSpeed) > 0.01f) ? newAccel : decceleration;
         float movement = Mathf.Pow(Mathf.Abs(speedDif) * accelRate, velPower) * Mathf.Sign(speedDif);
 
+        //Debug.Log("foo"+ movement * Vector2.right);
+        Debug.Log("bar" + movement);
         m_Rigidbody2D.AddForce(movement * Vector2.right);
 
 

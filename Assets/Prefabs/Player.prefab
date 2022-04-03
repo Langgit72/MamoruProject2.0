@@ -5134,7 +5134,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -5183,16 +5183,16 @@ MonoBehaviour:
   isJumping: 0
   m_WhatIsGround: 8
   m_WhatIsPlatform: 9
-  coyoteGroundedTime: 0
+  coyoteGroundedTime: 0.1
   cutMultiplier: 2
   coyoteJumpTime: 0.1
-  acceleration: 1
-  decceleration: 2
+  acceleration: 5
+  decceleration: 6
   moveSpeed: 20
   airFriction: 0
-  jumpForce: 9.7
-  midAirControl: 1
-  velPower: 2
+  jumpForce: 7
+  midAirControl: 2
+  velPower: 1
   m_input: {fileID: 0}
   m_Sprite: {fileID: 8007883628432515230}
   m_anim: {fileID: 7381224428480344935}
