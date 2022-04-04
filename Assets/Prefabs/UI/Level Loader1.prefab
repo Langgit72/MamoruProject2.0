@@ -31,8 +31,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5953578775829404438}
   - {fileID: 28763049704766185}
+  - {fileID: 5953578775829404438}
   - {fileID: 6982929258025338799}
   - {fileID: 6958178475604024866}
   m_Father: {fileID: 28763048664504669}
@@ -259,6 +259,24 @@ MonoBehaviour:
   sceneIndex: 0
   activeScene: 0
   transitionTime: 1
+  kamon: {fileID: 28763049704766190}
+  tip: {fileID: 2164927799688759088}
+  title: {fileID: 7530732596318818021}
+  kamons:
+  - {fileID: 21300000, guid: 84b1d0e5aba664d4abb82abf40abf250, type: 3}
+  tips:
+  - tip: Some NPCs will trade items with you. Make sure you choose the right Vendors
+      for the best prices
+    title: Interacting with Vendors
+  - tip: 'Items are seperated into four categories: Weapons, Clothing, Food, and
+      Miscellanous. ur journey.'
+    title: Item Types
+  - tip: Some animals and yokai emerge during the brief periods of Dawn and Dusk,
+      and are exceptionally rare
+    title: Crepuscular Creatures
+  - tip: Certian foods and drink can be offered to Yokai at special locations. If
+      you need to lure one out, try different treats
+    title: Offerings
   transition: {fileID: 28763048274294783}
 --- !u!1 &28763049704766184
 GameObject:
@@ -290,7 +308,7 @@ RectTransform:
   m_LocalScale: {x: 5, y: 4.5, z: 1}
   m_Children: []
   m_Father: {fileID: 28763050180087260}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -500,7 +518,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 28763050180087260}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

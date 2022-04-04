@@ -2,12 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using TMPro;
 public class LevelLoader : MonoBehaviour
 {
     public int sceneIndex;
     public SceneType activeScene;
     public static LevelLoader instance;
     public float transitionTime=1;
+
+    public Image kamon;
+    public TMP_Text tip;
+    public TMP_Text title;
+
+    public Sprite[] kamons;
+    public LoadTip[] tips;
+
+    LoadTip newTip;
+    Sprite newKamon;
 
     public Animator transition;
 
@@ -38,9 +50,21 @@ public class LevelLoader : MonoBehaviour
         #endregion
 
         sceneTable = new Hashtable();
-       sceneTable.Add(0, SceneType.Caves);
-       sceneTable.Add(1, SceneType.Village);
+        sceneTable.Add(SceneType.Village, 0);
+        sceneTable.Add(SceneType.Caves,1);
+
         Debug.Log("initialized");
+
+    }
+
+    private void Start()
+    {
+
+        newTip = Player.instance.tip;
+        newKamon = Player.instance.kamon;
+        tip.text = newTip.tip;
+        title.text = newTip.title;
+        kamon.sprite = newKamon;
     }
 
     private void Update()
@@ -52,11 +76,31 @@ public class LevelLoader : MonoBehaviour
 
 
     public void LoadNextLevel() {
+        int tipInt = Random.Range(0,tips.Length);
+        int spriteInt = Random.Range(0, kamons.Length);
+        newTip = tips[tipInt];
+        newKamon = kamons[spriteInt];
+        Player.instance.tip = newTip;
+        Player.instance.kamon = newKamon;
+
+        tip.text = newTip.tip;
+        title.text = newTip.title;
+        kamon.sprite = newKamon;
+
+
         UpdateIndex();
         StartCoroutine(LoadLevel(sceneIndex));
         Debug.Log("switching to"+(SceneType)sceneTable[SceneManager.GetActiveScene().buildIndex]);
     }
 
+    public void LoadScene(LevelLoader.SceneType scene)
+    {
+
+        Debug.Log("loading scene" +scene+ ","+ (int)sceneTable[scene]);
+        int m_Scene = (int)sceneTable[scene];
+        StartCoroutine(LoadLevel(m_Scene));
+
+    }
 
     IEnumerator LoadLevel(int levelIndex)
     {
@@ -64,14 +108,16 @@ public class LevelLoader : MonoBehaviour
         transition.SetBool("Fade Out", false);
         yield return new WaitForSeconds(transitionTime);
         AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
+        //operation.allowSceneActivation = false;
         while (!operation.isDone)
         {
-            Debug.Log("progress"+operation.progress);
+            Debug.Log("Loading progress: " + (operation.progress * 100) + "%");
             yield return null;
         }
         if (operation.isDone)
         {
             yield return new WaitForSeconds(1);
+            //operation.allowSceneActivation = true;
             transition.SetBool("Fade In", false);
             transition.SetBool("Fade Out", true);
         }

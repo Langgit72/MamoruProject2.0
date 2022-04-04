@@ -66,6 +66,9 @@ public class Player : MonoBehaviour
     public InputManager m_input;
     public PlayerController m_Controller;
 
+    public Sprite kamon;
+    public LoadTip tip;
+
 
 
     #endregion
@@ -96,8 +99,6 @@ public class Player : MonoBehaviour
         #region Reference definitions
 
         bottomText = BottomController.instance.GetComponent<TMP_Text>();
-        //GameManager.instance.player = this;
-        //m_Anim = Player.instance.m_Anim; 
         #endregion
 
         #region Stat Initialization
@@ -253,10 +254,12 @@ public class Player : MonoBehaviour
     {
         #region Interaction Management
         Vector3 interactPosition = m_Controller.GetComponent<Transform>().position;
-        Collider2D[] interactables = Physics2D.OverlapCircleAll(interactPosition, 10f, LayerMask.GetMask("Items", "NPC")); //All npcs are items currently being interacted with
+        Collider2D[] interactables = Physics2D.OverlapCircleAll(interactPosition, 10f, LayerMask.GetMask("Items", "NPC","Portal")); //All npcs, portals, and items currently being interacted with
         bool somethingClose = false;
+        Debug.Log("JEAN"+interactables.Length);
         for (int i = 0; i < interactables.Length; i++)
         {
+
             bool m_auto = false; //can current interactble be auto-collected
            
             if (interactables[i].GetComponent<Interactable>() != null) //Game objects in "Items or NPC" layer should always contain/inheirt an Interactable component
