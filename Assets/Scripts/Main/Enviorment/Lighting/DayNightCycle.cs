@@ -70,22 +70,27 @@ public class DayNightCycle : MonoBehaviour
         }
         og_day.a = 0;
         og_night.a = 255;
-        moonPhases = moon.GetComponent<Phases>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        sun = GameObject.Find("Sun").transform;
+        moon = GameObject.Find("Moon").transform;
+        moonPhases = GameObject.Find("Moon").GetComponent<Phases>();
+        day = GameObject.Find("Day").GetComponent<SpriteRenderer>();
+        night = GameObject.Find("Night Bottom").GetComponent<SpriteRenderer>();
+
+        /*
         if (moon == null|| sun == null) {
-            moon = GameObject.Find("Moon").transform;
-            moon.gameObject.GetComponent<Phases>().phaseNumber = phaseCount;
-            sun = GameObject.Find("Sun").transform;
+           
         }
         if (day== null || night == null)
         {
-            day = GameObject.Find("Day").GetComponent<SpriteRenderer>();
-            night = GameObject.Find("Night Bottom").GetComponent<SpriteRenderer>();
-        }
+            
+        }*/
+
         moonPhases.phaseNumber = phaseCount;
 
         #region Day Light Intensity and Sky Apperance

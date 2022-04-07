@@ -5186,9 +5186,9 @@ MonoBehaviour:
   coyoteGroundedTime: 0.1
   cutMultiplier: 2
   coyoteJumpTime: 0.1
-  acceleration: 5
-  decceleration: 6
-  moveSpeed: 20
+  acceleration: 3
+  decceleration: 4
+  moveSpeed: 25
   airFriction: 0
   jumpForce: 7
   midAirControl: 2

@@ -259,24 +259,26 @@ MonoBehaviour:
   sceneIndex: 0
   activeScene: 0
   transitionTime: 1
-  kamon: {fileID: 28763049704766190}
+  icon: {fileID: 28763049704766190}
   tip: {fileID: 2164927799688759088}
   title: {fileID: 7530732596318818021}
-  kamons:
-  - {fileID: 21300000, guid: 84b1d0e5aba664d4abb82abf40abf250, type: 3}
   tips:
   - tip: Some NPCs will trade items with you. Make sure you choose the right Vendors
       for the best prices
     title: Interacting with Vendors
+    icon: {fileID: 21300000, guid: 0b4ee7f99b0214e919c779787afd10c1, type: 3}
   - tip: 'Items are seperated into four categories: Weapons, Clothing, Food, and
       Miscellanous. ur journey.'
     title: Item Types
+    icon: {fileID: 21300000, guid: 027e92fab3a1a4b65a24f0d8189847c1, type: 3}
   - tip: Some animals and yokai emerge during the brief periods of Dawn and Dusk,
       and are exceptionally rare
     title: Crepuscular Creatures
+    icon: {fileID: 21300000, guid: 84b1d0e5aba664d4abb82abf40abf250, type: 3}
   - tip: Certian foods and drink can be offered to Yokai at special locations. If
       you need to lure one out, try different treats
     title: Offerings
+    icon: {fileID: 21300000, guid: fe03948cf39fb417ca2d7c27eb23d1cf, type: 3}
   transition: {fileID: 28763048274294783}
 --- !u!1 &28763049704766184
 GameObject:
@@ -387,8 +389,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.09415, y: -183.5}
-  m_SizeDelta: {x: 463.6785, y: 91.9395}
+  m_AnchoredPosition: {x: -245.2, y: -167.9}
+  m_SizeDelta: {x: 299.47, y: 91.9395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2544254884986441823
 CanvasRenderer:
@@ -522,8 +524,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245.20093, y: 52.241737}
-  m_SizeDelta: {x: 299.4681, y: 345.5165}
+  m_AnchoredPosition: {x: -245.20093, y: 69.68278}
+  m_SizeDelta: {x: 299.4681, y: 310.6345}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1412270546613385209
 CanvasRenderer:
@@ -597,7 +599,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -235.05714, y: -95.97}
+  m_AnchoredPosition: {x: -240.67, y: -64}
   m_SizeDelta: {x: 308.5206, y: 91.9395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9186406092106739725

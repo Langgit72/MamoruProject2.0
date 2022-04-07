@@ -8,5 +8,6 @@ public class LoadTip // JUST A CLASS
     [TextArea(3, 9)]
     public string tip;
     public string title;
+    public Sprite icon;
 
 }

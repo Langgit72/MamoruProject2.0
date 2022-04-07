@@ -11,15 +11,13 @@ public class LevelLoader : MonoBehaviour
     public static LevelLoader instance;
     public float transitionTime=1;
 
-    public Image kamon;
+    public Image icon;
     public TMP_Text tip;
     public TMP_Text title;
 
-    public Sprite[] kamons;
     public LoadTip[] tips;
 
     LoadTip newTip;
-    Sprite newKamon;
 
     public Animator transition;
 
@@ -61,10 +59,9 @@ public class LevelLoader : MonoBehaviour
     {
 
         newTip = Player.instance.tip;
-        newKamon = Player.instance.kamon;
         tip.text = newTip.tip;
         title.text = newTip.title;
-        kamon.sprite = newKamon;
+        icon.sprite = newTip.icon;
     }
 
     private void Update()
@@ -77,15 +74,12 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadNextLevel() {
         int tipInt = Random.Range(0,tips.Length);
-        int spriteInt = Random.Range(0, kamons.Length);
         newTip = tips[tipInt];
-        newKamon = kamons[spriteInt];
         Player.instance.tip = newTip;
-        Player.instance.kamon = newKamon;
 
         tip.text = newTip.tip;
         title.text = newTip.title;
-        kamon.sprite = newKamon;
+        icon.sprite = newTip.icon;
 
 
         UpdateIndex();
@@ -95,10 +89,17 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadScene(LevelLoader.SceneType scene)
     {
+        int tipInt = Random.Range(0, tips.Length);
+        newTip = tips[tipInt];
+        Player.instance.tip = newTip;
 
-        Debug.Log("loading scene" +scene+ ","+ (int)sceneTable[scene]);
+        tip.text = newTip.tip;
+        title.text = newTip.title;
+        icon.sprite = newTip.icon;
+
         int m_Scene = (int)sceneTable[scene];
         StartCoroutine(LoadLevel(m_Scene));
+        Debug.Log("loading scene" + scene + "," + (int)sceneTable[scene]);
 
     }
 

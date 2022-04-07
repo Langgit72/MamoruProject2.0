@@ -126,8 +126,8 @@ public class InputManager : MonoBehaviour
 
         if (attackInput)
         {
-            Debug.Log("Hello?");
-            LevelLoader.instance.LoadNextLevel();
+            Debug.Log("Attacking");
+            //LevelLoader.instance.LoadNextLevel();
         }
 
         if (!Inventory.instance.isHidden) // if the Inventory is open

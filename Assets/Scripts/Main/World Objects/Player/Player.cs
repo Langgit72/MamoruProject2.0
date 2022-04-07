@@ -65,8 +65,6 @@ public class Player : MonoBehaviour
     public Rigidbody2D m_Rigidbody2D;
     public InputManager m_input;
     public PlayerController m_Controller;
-
-    public Sprite kamon;
     public LoadTip tip;
 
 
@@ -233,7 +231,7 @@ public class Player : MonoBehaviour
                   Flip();
               }
               #endregion 
-     */
+
 
     private void Flip()
     {
@@ -249,6 +247,7 @@ public class Player : MonoBehaviour
 
 
     }
+         */
 
     public void Interact() 
     {
@@ -256,7 +255,7 @@ public class Player : MonoBehaviour
         Vector3 interactPosition = m_Controller.GetComponent<Transform>().position;
         Collider2D[] interactables = Physics2D.OverlapCircleAll(interactPosition, 10f, LayerMask.GetMask("Items", "NPC","Portal")); //All npcs, portals, and items currently being interacted with
         bool somethingClose = false;
-        Debug.Log("JEAN"+interactables.Length);
+        
         for (int i = 0; i < interactables.Length; i++)
         {
 

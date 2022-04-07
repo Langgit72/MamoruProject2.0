@@ -28,13 +28,9 @@ public class BottomController : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
 
-    }
-    private void LateUpdate()
-    {
         if (DialougeManager.instance.isRunning)
         {
             m_text.text = "";
