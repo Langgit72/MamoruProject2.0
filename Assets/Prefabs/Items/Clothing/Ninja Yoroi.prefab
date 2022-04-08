@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2553756051925975604}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.269711, y: -1.13431, z: 0}
+  m_LocalPosition: {x: -28.869131, y: 4.1387205, z: -3.3384984}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -138,7 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
-  inInventory: 1
+  inInventory: 0
+  m_player: {fileID: 0}
   title: Ninja garb
   info: Clothing for ninja
   cost:

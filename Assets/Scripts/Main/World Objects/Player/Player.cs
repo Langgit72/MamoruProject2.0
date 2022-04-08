@@ -147,7 +147,12 @@ public class Player : MonoBehaviour
 
         if (m_input.attackInput)
         {
+            Debug.Log("Attacking");
             StartCoroutine(AttackRoutine());
+            //m_Controller.moveSpeed = 25;
+        }
+        else {
+            //m_Controller.moveSpeed = 10;
         }
  
         /*

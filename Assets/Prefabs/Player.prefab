@@ -5190,7 +5190,7 @@ MonoBehaviour:
   decceleration: 4
   moveSpeed: 25
   airFriction: 0
-  jumpForce: 7
+  jumpForce: 9
   midAirControl: 2
   velPower: 1
   m_input: {fileID: 0}

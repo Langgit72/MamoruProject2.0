@@ -126,7 +126,7 @@ public class InputManager : MonoBehaviour
 
         if (attackInput)
         {
-            Debug.Log("Attacking");
+            //Debug.Log("Attacking");
             //LevelLoader.instance.LoadNextLevel();
         }
 

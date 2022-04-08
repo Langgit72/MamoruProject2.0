@@ -21,5 +21,6 @@ public class Portal : Interactable
         base.Interact();
         LevelLoader.instance.LoadScene(sceneType);
 
+
     }
 }

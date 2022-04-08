@@ -47,8 +47,10 @@ public class Enemy : MonoBehaviour
     {
         current_health -= damage/10; //reduce health;
 
+        /*
         Vector3 currentVelocity = m_Rigidbody2D.velocity;
         m_Rigidbody2D.velocity = new Vector3(currentVelocity.x*1f, currentVelocity.y, currentVelocity.z);
+        */
 
         if (current_health <= 0 && alive)
         {

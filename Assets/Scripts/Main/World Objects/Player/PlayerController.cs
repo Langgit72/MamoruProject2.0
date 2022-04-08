@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private float acceleration;
     [SerializeField] private float decceleration;
-    [SerializeField] private float moveSpeed;
+    public float moveSpeed;
     [SerializeField] private float airFriction;
 
     [SerializeField] private float jumpForce;

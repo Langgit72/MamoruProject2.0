@@ -26,6 +26,7 @@ public class LevelLoader : MonoBehaviour
     {
         None,
         Village,
+        Sample,
         Caves
     }
     public Hashtable sceneTable;
@@ -49,7 +50,8 @@ public class LevelLoader : MonoBehaviour
 
         sceneTable = new Hashtable();
         sceneTable.Add(SceneType.Village, 0);
-        sceneTable.Add(SceneType.Caves,1);
+        sceneTable.Add(SceneType.Sample, 1);
+        sceneTable.Add(SceneType.Caves,2);
 
         Debug.Log("initialized");
 
