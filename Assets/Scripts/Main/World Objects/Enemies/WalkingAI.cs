@@ -7,16 +7,29 @@ public class WalkingAI : MonoBehaviour
     const float k_attackRadius = 4f;
     const float k_GroundedRadius = .21f;
     public float range;
+    public float stop;
+    public float moveSpeed;
+    public float walkSpeed;
+    public float frequency;
+    public bool aggro=false;
+    public float randSeed;
+
+    private bool moveValue;
+    public bool flip;
     private bool m_Grounded;// Whether or not the player is grounded.
     private bool hasAttacked = false;
+    private bool wandering = false;
+
+    private float maxX;
+    private float minX;
 
     [SerializeField] private LayerMask enemyLayers;
     [SerializeField] private LayerMask m_WhatIsGround;
 
     private Transform m_GroundCheck;
-    [SerializeField] public Transform attackPoint;
     [SerializeField] public Transform m_player;
-
+    [SerializeField] public Transform maxXTransform;
+    [SerializeField] public Transform minXTransform;
     SpriteRenderer m_sprite;
     Rigidbody2D m_Rigidbody2D;
     Animator m_Anim;
@@ -24,56 +37,103 @@ public class WalkingAI : MonoBehaviour
     #region Unity Methods
     void Start()
     {
-        attackPoint = transform.Find("SamuariPoint");
         m_GroundCheck = transform.Find("GroundCheck");
         m_sprite = gameObject.GetComponent<SpriteRenderer>();
         m_Rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         m_Anim = GetComponent<Animator>();
         m_player = Player.instance.m_Controller.transform;
+        randSeed = Random.Range(0, 100);
+
+        minX = minXTransform.position.x;
+        maxX = maxXTransform.position.x;
 
     }
 
     void Update()
     {
-
-
-        if (m_Grounded)
+        if (m_player == null)
         {
-            if (m_player.position.x > attackPoint.transform.position.x)
-            {
+            m_player = Player.instance.m_Controller.transform;
+        }
+        float newX = (m_Rigidbody2D.position.x + m_Rigidbody2D.velocity.x);
 
-
-                m_sprite.flipX = false;
-                m_Rigidbody2D.velocity = new Vector2(1.5f, m_Rigidbody2D.velocity.y); ;
-                m_Anim.SetFloat("speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
-                if (Mathf.Abs(m_player.position.x - attackPoint.transform.position.x) < 1.2 && (Mathf.Abs(m_player.position.y - attackPoint.transform.position.y) < 50))
-                {
-
-                    m_Anim.SetTrigger("attack");
-                    Attack();
-                }
-
-
+        m_sprite.flipX = m_Rigidbody2D.velocity.x > 0 ? false : true;
+        float distance = Mathf.Abs(m_player.position.x - transform.position.x);
+        float distanceY = Mathf.Abs(m_player.position.y - transform.position.y);
+        Debug.Log("Tickle" + distanceY);
+        if (distance > range * 2)
+        {
+            if (aggro) {
+                minX = minXTransform.position.x;
+                maxX = maxXTransform.position.x;
+                Debug.Log("resetting transform");
             }
-            else if (m_player.position.x < attackPoint.transform.position.x)
+            aggro = false;
+        }
+        if ((distanceY <2f||aggro) && ((distance < range || aggro) && distance > stop))
+        {
+            aggro = true;
+            if (m_Grounded)
             {
-                m_sprite.flipX = true;
+                float direction = (m_player.position.x > transform.position.x) ? moveSpeed : -moveSpeed;
+                Debug.Log("rain" +direction);
+                m_Rigidbody2D.velocity = new Vector2(direction, m_Rigidbody2D.velocity.y);
+            }
+        }
+        else if ((distanceY < 2f) && distance<range) {
+            m_Anim.SetTrigger("attack");
+            StartCoroutine(Attack());
+        }
+        else
+        {
+            float num = Mathf.PerlinNoise((Time.time+randSeed),1);
+            Debug.Log("iga"+num);
+            if (num > frequency)
+            {
+                wandering = false;
+                m_Rigidbody2D.velocity = new Vector2(0f, m_Rigidbody2D.velocity.y);
+            }
+            else 
+            {
 
-                m_Rigidbody2D.velocity = new Vector2(-1.5f, m_Rigidbody2D.velocity.y);
-                m_Anim.SetFloat("speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
-
-                if (Mathf.Abs(m_player.position.x - attackPoint.transform.position.x) < 1.2 && (Mathf.Abs(m_player.position.y - attackPoint.transform.position.y) < 50))
+                if (!wandering)
                 {
-
-                    m_Anim.SetTrigger("attack");
-
-                    StartCoroutine(Attack());
+                    moveValue = Random.value > 0.5f;
                 }
+                wandering = true;
+                if (moveValue)
+                {
+                    m_Rigidbody2D.velocity = new Vector2(walkSpeed, m_Rigidbody2D.velocity.y);
+                    Debug.Log("Leo Left ");
+                }
+                else {
+                    m_Rigidbody2D.velocity = new Vector2(-walkSpeed, m_Rigidbody2D.velocity.y);
+                    Debug.Log("Leo Right ");
+                }
+                   
+            }
+
+
+
+            if (!((newX < maxX) && (newX > minX)))
+            {
+
+              
+                if (!flip)
+                {
+                    walkSpeed *= -1; //reverse direction
+                }
+                flip = true;
+                //m_Rigidbody2D.velocity = new Vector2(-m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y);
+                Debug.Log("pilates"); // + minX + "," + newX + "," + maxX + "," + ((newX < maxX) && (newX > minX))) ;
+            }
+            else {
+                flip = false;
             }
 
         }
 
-
+        m_Anim.SetFloat("speed", Mathf.Abs(m_Rigidbody2D.velocity.x));
 
 
 
@@ -114,7 +174,7 @@ public class WalkingAI : MonoBehaviour
     IEnumerator Attack()
     {
         Debug.Log("Attacking");
-        Collider2D[] players = Physics2D.OverlapCircleAll(attackPoint.position, k_attackRadius, enemyLayers);
+        Collider2D[] players = Physics2D.OverlapCircleAll(transform.position, k_attackRadius, enemyLayers);
         for (int i = 0; i < players.Length; i++)
         {
             if (players[i].gameObject != gameObject)

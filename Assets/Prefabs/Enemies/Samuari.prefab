@@ -34,6 +34,7 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_Children:
   - {fileID: 7358510195528086073}
+  - {fileID: 2769533426714999585}
   - {fileID: 7358510195844923843}
   - {fileID: 7358510196881741373}
   m_Father: {fileID: 0}
@@ -171,15 +172,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 003991c239adf4e2a8f966c7303194b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 0
+  range: 10
+  stop: 6
+  moveSpeed: 6
+  walkSpeed: 4
+  frequency: 0.45
+  aggro: 0
+  randSeed: 0
+  flip: 0
   enemyLayers:
     serializedVersion: 2
     m_Bits: 64
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 256
-  attackPoint: {fileID: 0}
   m_player: {fileID: 0}
+  maxXTransform: {fileID: 2769533426714999585}
+  minXTransform: {fileID: 7358510195528086073}
 --- !u!50 &6181590109956401575
 Rigidbody2D:
   serializedVersion: 4
@@ -200,7 +209,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &7358510195356279353
 GameObject:
   m_ObjectHideFlags: 0
@@ -286,7 +295,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7358510195528086073}
   m_Layer: 6
-  m_Name: SamuariPoint
+  m_Name: minX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7358510195528086072}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.11, z: 0.570993}
+  m_LocalPosition: {x: -0.6, y: 0.11, z: 0.570993}
   m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_Children: []
   m_Father: {fileID: 7358510195137482351}
@@ -334,7 +343,7 @@ Transform:
   m_LocalScale: {x: 0.125, y: 0.125, z: 1}
   m_Children: []
   m_Father: {fileID: 7358510195137482351}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7358510196736372351
 GameObject:
@@ -511,7 +520,7 @@ RectTransform:
   m_Children:
   - {fileID: 7358510196736372348}
   m_Father: {fileID: 7358510195137482351}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -579,3 +588,33 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!1 &8354143035042312354
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2769533426714999585}
+  m_Layer: 6
+  m_Name: 'maxX '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2769533426714999585
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8354143035042312354}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6, y: 0.11, z: 0.570993}
+  m_LocalScale: {x: 0.125, y: 0.125, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7358510195137482351}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

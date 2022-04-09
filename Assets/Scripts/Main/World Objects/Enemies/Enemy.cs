@@ -22,7 +22,7 @@ public class Enemy : MonoBehaviour
     public GameObject drop2;
     public GameObject drop3;
 
-    private Rigidbody2D m_Rigidbody2D; // Reference to rigidbody2D
+    //private Rigidbody2D m_Rigidbody2D; // Reference to rigidbody2D
     private SpriteRenderer m_Sprite; // Reference to sprite renderer
 
     Animator m_Anim;
@@ -35,7 +35,7 @@ public class Enemy : MonoBehaviour
     {
         //Setting up references
         current_health = max_health;
-        m_Rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
+        //m_Rigidbody2D = gameObject.GetComponent<Rigidbody2D>();
         m_Sprite = gameObject.GetComponent<SpriteRenderer>();
         m_Anim = GetComponent<Animator>();
     }
