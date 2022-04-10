@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3769576862089064677}
   - component: {fileID: 3769576862089064676}
   - component: {fileID: 3374436864574288136}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Kusarigama
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +148,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Kusarigama
   info: "a traditional Japanese weapon that consists of a kama on a kusari-fundo
     \u2013 a type of metal chain with a heavy iron weight at the end"
@@ -156,7 +158,6 @@ MonoBehaviour:
     shu_cost: 0
     ryo_cost: 0
   m_type: 4
-  m_player: {fileID: 0}
   type: 1
   range: 5.47
   speed: 310

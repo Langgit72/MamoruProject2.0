@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5120023586863875827}
   - component: {fileID: 2789065631666346239}
   - component: {fileID: 2219890998307798317}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Daiginjo Sake
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   title: Daiginjo Sake
   info: Highly milled sake made from Saimaibuai rice
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   recovery: 5

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6974762465733157586}
   - component: {fileID: 8069321686933639379}
   - component: {fileID: 167817451465986495}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Tamago
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   title: Tamago Sushi
   info: Egg in omelette form made into sushi
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   recovery: 5

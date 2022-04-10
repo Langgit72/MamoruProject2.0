@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3246615052767352030}
   - component: {fileID: 3246615052767352031}
   - component: {fileID: 8480316150146107476}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Shu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 272ba847f100d4251bb8260575189042, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: 
   info: 
   cost:

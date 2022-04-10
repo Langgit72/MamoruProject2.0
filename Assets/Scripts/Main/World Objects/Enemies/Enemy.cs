@@ -91,7 +91,7 @@ public class Enemy : MonoBehaviour
             GameObject.Destroy(child.gameObject); //gets rid of health bar
         }
 
-        m_Anim.SetTrigger("death");
+        m_Anim.SetBool("death",true);
 
 
 

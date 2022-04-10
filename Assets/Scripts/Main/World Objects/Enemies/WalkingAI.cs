@@ -12,8 +12,13 @@ public class WalkingAI : MonoBehaviour
     public float walkSpeed;
     public float frequency;
     public bool aggro=false;
-    public float randSeed;
+    public CanvasGroup barGroup;
+    public float attackCoolOff;
+    private float lastCoolTime;
 
+    private float randSeed;
+    public bool fadingIn = false;
+    public bool fadingOut = false;
     private bool moveValue;
     public bool flip;
     private bool m_Grounded;// Whether or not the player is grounded.
@@ -51,6 +56,24 @@ public class WalkingAI : MonoBehaviour
 
     void Update()
     {
+        lastCoolTime -= Time.deltaTime;
+        if (aggro)
+        {
+            if (!fadingIn)
+            {
+                StartCoroutine(FadeInBar());
+                fadingIn = true;
+            }
+
+        }
+        else {
+            if (!fadingOut)
+            {
+                StartCoroutine(FadeOutBar());
+                fadingOut = true;
+            }
+
+        }
         if (m_player == null)
         {
             m_player = Player.instance.m_Controller.transform;
@@ -60,34 +83,36 @@ public class WalkingAI : MonoBehaviour
         m_sprite.flipX = m_Rigidbody2D.velocity.x > 0 ? false : true;
         float distance = Mathf.Abs(m_player.position.x - transform.position.x);
         float distanceY = Mathf.Abs(m_player.position.y - transform.position.y);
-        Debug.Log("Tickle" + distanceY);
         if (distance > range * 2)
         {
             if (aggro) {
                 minX = minXTransform.position.x;
                 maxX = maxXTransform.position.x;
-                Debug.Log("resetting transform");
             }
             aggro = false;
         }
-        if ((distanceY <2f||aggro) && ((distance < range || aggro) && distance > stop))
+        if ((distanceY <2f) && ((distance < range || aggro) && distance > stop))
         {
             aggro = true;
             if (m_Grounded)
             {
                 float direction = (m_player.position.x > transform.position.x) ? moveSpeed : -moveSpeed;
-                Debug.Log("rain" +direction);
                 m_Rigidbody2D.velocity = new Vector2(direction, m_Rigidbody2D.velocity.y);
             }
         }
         else if ((distanceY < 2f) && distance<range) {
-            m_Anim.SetTrigger("attack");
-            StartCoroutine(Attack());
+        
+            if(lastCoolTime < 0)
+            {
+                StartCoroutine(Attack());
+                m_Anim.SetTrigger("attack");
+                lastCoolTime = attackCoolOff;
+            }
+
         }
         else
         {
             float num = Mathf.PerlinNoise((Time.time+randSeed),1);
-            Debug.Log("iga"+num);
             if (num > frequency)
             {
                 wandering = false;
@@ -104,11 +129,9 @@ public class WalkingAI : MonoBehaviour
                 if (moveValue)
                 {
                     m_Rigidbody2D.velocity = new Vector2(walkSpeed, m_Rigidbody2D.velocity.y);
-                    Debug.Log("Leo Left ");
                 }
                 else {
                     m_Rigidbody2D.velocity = new Vector2(-walkSpeed, m_Rigidbody2D.velocity.y);
-                    Debug.Log("Leo Right ");
                 }
                    
             }
@@ -117,15 +140,15 @@ public class WalkingAI : MonoBehaviour
 
             if (!((newX < maxX) && (newX > minX)))
             {
-
-              
                 if (!flip)
                 {
-                    walkSpeed *= -1; //reverse direction
+                    if (!aggro)
+                    {
+                        walkSpeed *= -1; //reverse direction
+                    }
+
                 }
                 flip = true;
-                //m_Rigidbody2D.velocity = new Vector2(-m_Rigidbody2D.velocity.x, m_Rigidbody2D.velocity.y);
-                Debug.Log("pilates"); // + minX + "," + newX + "," + maxX + "," + ((newX < maxX) && (newX > minX))) ;
             }
             else {
                 flip = false;
@@ -165,18 +188,27 @@ public class WalkingAI : MonoBehaviour
 
     IEnumerator Damage()
     {
-        //yield on a new YieldInstruction that waits for 5 seconds.
-        yield return new WaitForSeconds(0.8f);
-        hasAttacked = false;
+        yield return new WaitForSeconds(1f);
+        Player.instance.TakeDamage(5);
+      
+
 
     }
 
     IEnumerator Attack()
     {
-        Debug.Log("Attacking");
         Collider2D[] players = Physics2D.OverlapCircleAll(transform.position, k_attackRadius, enemyLayers);
         for (int i = 0; i < players.Length; i++)
         {
+            Player.instance.Launch(5, m_sprite.flipX);
+            StartCoroutine(Damage());
+            /*if (!hasAttacked)
+            {
+                hasAttacked = true;
+               
+            }*/
+
+            /*
             if (players[i].gameObject != gameObject)
             {
                 if (!hasAttacked)
@@ -187,10 +219,36 @@ public class WalkingAI : MonoBehaviour
                 }
 
             }
+            */
 
         }
         yield return new WaitForSeconds(5);
 
     }
+
+
+    IEnumerator FadeInBar()
+    {
+        barGroup.alpha = 0;
+        while (barGroup.alpha < 1f) {
+            barGroup.alpha += 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+        fadingOut = false;
+
+    
+    }
+    IEnumerator FadeOutBar()
+    {
+        while (barGroup.alpha > 0f)
+        {
+            barGroup.alpha -= 0.1f;
+            yield return new WaitForSeconds(0.1f);
+        }
+        fadingIn = false;
+
+
+    }
+
     #endregion
 }

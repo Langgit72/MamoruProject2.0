@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6655886461100277540}
   - component: {fileID: 2836859896738567488}
   - component: {fileID: 1872656702979199197}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: 'Sake '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -122,6 +122,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Sake sushi
   info: not to be confused with the drink of the same name, sushi made from freshly
     caught salmon
@@ -130,7 +132,6 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 0}
   recovery: 5
 --- !u!61 &1872656702979199197
 BoxCollider2D:

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7845891690485583952}
   - component: {fileID: 7629487280803005700}
   - component: {fileID: 3109698637501648075}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: 'Maguro '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   title: Maguro sushi
   info: Sushi made from lean cut of bluefin tuna
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   recovery: 5

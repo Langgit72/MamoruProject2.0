@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1445712086980369332}
   - component: {fileID: 1445712086980369331}
   - component: {fileID: 1445712086980369333}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Ramen Bowl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +148,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
+  inInventory: 1
+  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   title: Ramen Bowl
   info: Japanese noodle soup. Wheat noodles served in a meat or fish broth, often
     flavored with soy sauce or miso. Contains toppings such as sliced pork
@@ -156,5 +158,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   recovery: 5

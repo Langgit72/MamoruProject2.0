@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7048698510630718300}
   - component: {fileID: 2970276328563531835}
   - component: {fileID: 1831743808735273939}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Uramaki
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Uramaki Sushi
   info: 'Aged salmon and fresh cucumbers wrapped in specialty nori '
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 0}
   recovery: 5

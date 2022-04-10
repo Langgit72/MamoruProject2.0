@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
         #endregion
 
         if (playerAnimator != null) {
-            Player.instance.m_Anim.runtimeAnimatorController = playerAnimator;
+            //Player.instance.m_Anim.runtimeAnimatorController = playerAnimator;
         }
         DontDestroyOnLoad(gameObject);
 

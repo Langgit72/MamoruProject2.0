@@ -55,9 +55,10 @@ public class Player : MonoBehaviour
     public Transform attackCollider; //A position marking hwere to to for player attacks
     public Transform m_Transform;
 
-    public Animator m_Anim;  // Reference to the player's animator component.
+    //public Animator m_Anim;  // Reference to the player's animator component.
     public RuntimeAnimatorController m_aniController;
-    public Animator weapon_Anim; // Reference to the player weapon animator component.
+    public RuntimeAnimatorController m_weaponController;
+    //public Animator weapon_Anim; // Reference to the player weapon animator component.
 
     public SpriteRenderer m_Sprite; // Reference to the player's sprite component(variable).
     private GameObject weapon;
@@ -124,20 +125,23 @@ public class Player : MonoBehaviour
     {
         m_input = InputManager.instance;
         m_input.drop_point = this;
-        weapon = weapon_Anim.gameObject;
+        //weapon = weapon_Anim.gameObject;
         weaponPositionX = weapon.transform.localPosition.x;
     }
     
 
     private void Update()
     {
-
+        if (m_input.attackInput)
+        {
+            StartCoroutine(AttackRoutine());
+        }
         Interact(); //always be interacting with the world
         canAttack = attackCollider.localScale.x == base_range; //if the attack collider has return to the base range, the player can attack once more
     
         #region Attack Animation Controls
-        m_Anim.SetInteger("Attack Mode",attackMode); //set both player and weapon animation to the attackMode
-        weapon_Anim.SetInteger("Attack Mode", attackMode);
+        m_Controller.m_anim.SetInteger("Attack Mode",attackMode); //set both player and weapon animation to the attackMode
+        m_Controller.weapon_anim.SetInteger("Attack Mode", attackMode);
         #endregion
   
         weapon.GetComponent<SpriteRenderer>().flipX = m_Sprite.flipX;
@@ -145,16 +149,8 @@ public class Player : MonoBehaviour
         Vector3 newPosition = new Vector3(positionMod, weapon.transform.localPosition.y, weapon.transform.localPosition.z);
         weapon.transform.localPosition = newPosition;
 
-        if (m_input.attackInput)
-        {
-            Debug.Log("Attacking");
-            StartCoroutine(AttackRoutine());
-            //m_Controller.moveSpeed = 25;
-        }
-        else {
-            //m_Controller.moveSpeed = 10;
-        }
- 
+
+
         /*
            if (m_input.chiInput)
            {
@@ -200,13 +196,6 @@ public class Player : MonoBehaviour
 
     }
 
-    private void FixedUpdate()
-    {
-
-
-
-    }
-
     void OnDrawGizmos()
     {
         // Draw a yellow cube at the transform position
@@ -218,41 +207,6 @@ public class Player : MonoBehaviour
     #endregion
 
     #region Methods
-
-    /*
-
-              #region Flip Character
-              // If the input is moving the player right and the player is facing left...
-
-              if (move > 0 && !m_FacingRight)
-              {
-                  // ... flip the player.
-                  Flip();
-              }
-              // Otherwise if the input is moving the player left and the player is facing right...
-              else if (move < 0 && m_FacingRight)
-              {
-                  // ... flip the player.
-                  Flip();
-              }
-              #endregion 
-
-
-    private void Flip()
-    {
-        // Switch the way the player is labelled as facing.
-        m_FacingRight = !m_FacingRight;
-
-        // Multiply the player's x local scale by -1.
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
-        attackCollider.localPosition = new Vector3(0.05f, attackCollider.localPosition.y, attackCollider.localPosition.z);
-        attackCollider.localScale = new Vector3(1f, attackCollider.localScale.y, attackCollider.localScale.z);
-
-
-    }
-         */
 
     public void Interact() 
     {
@@ -305,20 +259,21 @@ public class Player : MonoBehaviour
 
 
 
-    public void TakeDamage(float damage, bool dir) // Player taking damage
+    public void TakeDamage(float damage) // Player taking damage
     {
-        DialougeManager.instance.EndDialouge(); // knock player out of any dialouge
-
         current_health -= damage; // reduce health
-        int direction = dir ? -2 : 2; //knock back direction
-        m_Rigidbody2D.velocity = m_FacingRight ? new Vector2(damage / 2 * direction, damage) : new Vector2(damage / 2 * direction, damage); //launch character
-
         if (current_health <= 0)  // player is dead if health is zero
         {
             print("The way of the samurai.."); //...well right now he is immortal
         }
 
+    }
 
+    public void Launch(float damage, bool dir) // Player taking damage
+    {
+        DialougeManager.instance.EndDialouge(); // knock player out of any dialouge
+        int direction = dir ? -2 : 2; //knock back direction
+        m_Controller.m_Rigidbody2D.velocity = new Vector2((damage*2) * direction, damage*2);
     }
 
     #endregion
@@ -340,13 +295,15 @@ public class Player : MonoBehaviour
     }
     IEnumerator AttackRoutine()
     {
-        int direction = m_FacingRight ? 1 : -1; // stores player direction
+        int direction = m_Controller.m_Sprite.flipX ? -1 : 1; // stores player direction
+        m_Controller.weapon_anim.gameObject.GetComponent<SpriteRenderer>().flipX = m_Controller.m_Sprite.flipX;
+
 
         if (canAttack) //If attack button is pressed
         {
             //play attack animation
-            m_Anim.SetBool("Attack",true);
-            weapon_Anim.SetBool("Attack", true);
+            m_Controller.m_anim.SetBool("Attack",true);
+            m_Controller.weapon_anim.SetBool("Attack", true);
 
             yield return new WaitForSeconds(windUp); //wait for weapon wind up portion of attack
 
@@ -356,7 +313,7 @@ public class Player : MonoBehaviour
                 yield return new WaitForSeconds((1f/weapon_speed)+0.00001f);// the faster the weapon the shorter the wait, avoid dividing by 0
 
                 // move weapon collider backwards, while increasing it's width
-                attackCollider.localPosition = new Vector3(attackCollider.localPosition.x + 0.025f, attackCollider.localPosition.y, attackCollider.localPosition.z); 
+                attackCollider.localPosition = new Vector3(direction*attackCollider.localPosition.x + 0.025f, attackCollider.localPosition.y, attackCollider.localPosition.z); 
                 attackCollider.localScale = new Vector3(attackCollider.localScale.x + 0.5f, attackCollider.localScale.y, attackCollider.localScale.z);
 
                 Collider2D[] hitEnemies = Physics2D.OverlapBoxAll(attackCollider.position, attackCollider.localScale, enemyLayers); //check for damaged enemies
@@ -396,8 +353,9 @@ public class Player : MonoBehaviour
             //reset base range?
             attackCollider.localPosition = new Vector3(base_range/50f, attackCollider.localPosition.y, attackCollider.localPosition.z);
             attackCollider.localScale = new Vector3(base_range, attackCollider.localScale.y, attackCollider.localScale.z);
-            m_Anim.SetBool("Attack", false);
-            weapon_Anim.SetBool("Attack", false);
+            m_Controller.m_anim.SetBool("Attack", false);
+            m_Controller.weapon_anim.SetBool("Attack", false);
+
         }
     }
 

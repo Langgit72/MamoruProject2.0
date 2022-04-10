@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1227953300265284716}
   - component: {fileID: 1227953300265284717}
   - component: {fileID: 1692357595446914307}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Kama
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -148,6 +148,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Kama
   info: ' traditional Japanese farming implement similar to a sickle used for reaping
     crops and also employed as a weapon.'
@@ -156,7 +158,6 @@ MonoBehaviour:
     shu_cost: 0
     ryo_cost: 0
   m_type: 4
-  m_player: {fileID: 0}
   type: 0
   range: 1.5
   speed: 35

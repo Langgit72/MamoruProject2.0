@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 8880569581638115611}
   - component: {fileID: 8880569581638115610}
   - component: {fileID: 8880569581638115609}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Lucky Ryo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Lucky Ryo
   info: Sign of good fortune
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 0
     ryo_cost: 0
   m_type: 1
-  m_player: {fileID: 0}
   recovery: 5

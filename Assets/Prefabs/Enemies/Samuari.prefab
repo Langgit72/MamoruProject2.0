@@ -123,7 +123,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.00077581406, y: 0.08260256}
+  m_Offset: {x: 0.0030083656, y: 0.08260256}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -134,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.19116879, y: 0.16520512}
+  m_Size: {x: 0.12953472, y: 0.16520512}
   m_EdgeRadius: 0
 --- !u!114 &7358510195137482348
 MonoBehaviour:
@@ -178,7 +178,10 @@ MonoBehaviour:
   walkSpeed: 4
   frequency: 0.45
   aggro: 0
-  randSeed: 0
+  barGroup: {fileID: 5493156391182079688}
+  attackCoolOff: 2.5
+  fadingIn: 0
+  fadingOut: 0
   flip: 0
   enemyLayers:
     serializedVersion: 2
@@ -382,8 +385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.007769823}
-  m_SizeDelta: {x: -0.0417, y: -0.05806}
+  m_AnchoredPosition: {x: 0.0034, y: -0.0555}
+  m_SizeDelta: {x: -0.14185, y: -0.111}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7358510196736372344
 CanvasRenderer:
@@ -500,6 +503,7 @@ GameObject:
   - component: {fileID: 7358510196881741368}
   - component: {fileID: 7358510196881741371}
   - component: {fileID: 7358510196881741370}
+  - component: {fileID: 5493156391182079688}
   m_Layer: 6
   m_Name: Health Bar
   m_TagString: Untagged
@@ -588,6 +592,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &5493156391182079688
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7358510196881741372}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &8354143035042312354
 GameObject:
   m_ObjectHideFlags: 0

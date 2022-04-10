@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4193879283456976089}
   - component: {fileID: 5334481874507912945}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Point Light 2D
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -85,7 +85,7 @@ GameObject:
   - component: {fileID: 6260847652941999081}
   - component: {fileID: 1972901978642256622}
   - component: {fileID: 5548083178647361364}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,6 +174,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
+  inInventory: 1
+  m_player: {fileID: 0}
   title: chochin Lantern
   info: ' lantern made of thin, brightly colored paper, with Edomoji characters'
   cost:

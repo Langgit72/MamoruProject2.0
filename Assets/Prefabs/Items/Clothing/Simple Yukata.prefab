@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5944374790316867804}
   - component: {fileID: 7972698170932457042}
   - component: {fileID: -2584888961836676513}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Simple Yukata
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 0
+  inInventory: 1
+  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   title: Simple Yukata
   info: Cotton kimono worn in causal settings like bathhouses
   cost:
@@ -145,5 +147,4 @@ MonoBehaviour:
     shu_cost: 0
     ryo_cost: 0
   m_type: 3
-  m_player: {fileID: 1284900935362154926, guid: cd46adf35b5ce484b841ef8e540264ab, type: 3}
   m_anim: {fileID: 9100000, guid: 6225ef392b7e24eac9b846c2c4891617, type: 2}

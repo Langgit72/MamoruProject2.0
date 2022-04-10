@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7604106450883246282}
   - component: {fileID: 8377520262624492813}
   - component: {fileID: -8056936447144206984}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Simple Kunai
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 0
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Simple Kunai
   info: A weaponized verison of a builder's trowel. A basic tool, but lethal in the
     hands of an expert...
@@ -146,7 +148,6 @@ MonoBehaviour:
     shu_cost: 0
     ryo_cost: 0
   m_type: 4
-  m_player: {fileID: 0}
   type: 0
   range: 2
   speed: 50

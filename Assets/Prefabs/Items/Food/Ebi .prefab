@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 9144982085818433275}
   - component: {fileID: 8876571559100672895}
   - component: {fileID: 4132788534760349680}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: 'Ebi '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -138,6 +138,8 @@ MonoBehaviour:
   bottomText: {fileID: 0}
   consumable: 1
   autocollect: 1
+  inInventory: 1
+  m_player: {fileID: 0}
   title: Ebi Sushi
   info: Sushi made from cooked shrimp, don't know how that can be considered sushi
     though
@@ -146,5 +148,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  m_player: {fileID: 0}
   recovery: 5

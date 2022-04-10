@@ -23,7 +23,7 @@ public class PlayerController : MonoBehaviour
 
     public bool isJumping;
 
-    private Rigidbody2D m_Rigidbody2D;  // Reference to the player's rigidbody component.
+    public Rigidbody2D m_Rigidbody2D;  // Reference to the player's rigidbody component.
 
     private float lastGroundedTime;
     private float lastJumpTime;
@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     [SerializeField] private float midAirControl;
     [SerializeField] private int velPower;
-
+     
     public InputManager m_input;
     public SpriteRenderer m_Sprite;
     public Animator m_anim;
@@ -65,17 +65,18 @@ public class PlayerController : MonoBehaviour
         m_input = InputManager.instance;
         m_Rigidbody2D = GetComponent<Rigidbody2D>();
         m_Sprite = gameObject.GetComponent<SpriteRenderer>();
-        Player.instance.weapon_Anim = weapon_anim;
+       
         Player.instance.attackCollider = attackpos;
         DayNightCycle.instance.center = gameObject.transform;
         m_anim.runtimeAnimatorController = Player.instance.m_aniController;
+        weapon_anim.runtimeAnimatorController = Player.instance.m_weaponController;
 
     }
 
     private void Update()
     {
         Player.instance.m_aniController = m_anim.runtimeAnimatorController;
-
+        Player.instance.m_weaponController = weapon_anim.runtimeAnimatorController;
     }
 
     private void FixedUpdate()

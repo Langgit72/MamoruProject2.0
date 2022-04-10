@@ -162,7 +162,7 @@ public class InputManager : MonoBehaviour
                 }
                 removeInput = false;
             }
-
+            
             if (useInput)
             {
                 if (Inventory.instance.items.Count - 1 >= Inventory.instance.highlight) // if the slot of the item button contains an item
