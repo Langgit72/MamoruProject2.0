@@ -12,9 +12,9 @@ public class Player : MonoBehaviour
     public static Player instance;
 
     #region Stats
-    public float max_health = 100; // max health of character
-    public float max_stamina = 100; // max health of character
-    public float max_chi = 100; // max chi of character
+    public float max_health; // max health of character
+    public float max_stamina; // max health of character
+    public float max_chi; // max chi of character
     public float strength;
 
     public float current_health; // current health of character
@@ -264,7 +264,8 @@ public class Player : MonoBehaviour
         current_health -= damage; // reduce health
         if (current_health <= 0)  // player is dead if health is zero
         {
-            print("The way of the samurai.."); //...well right now he is immortal
+            LevelLoader.instance.LoadScene(LevelLoader.SceneType.Village);
+            
         }
 
     }

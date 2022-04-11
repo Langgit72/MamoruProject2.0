@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour
     public SceneType activeScene;
     public static LevelLoader instance;
     public float transitionTime=1;
+    public float deathTime;
 
     public Image icon;
     public TMP_Text tip;
@@ -20,6 +21,7 @@ public class LevelLoader : MonoBehaviour
     LoadTip newTip;
 
     public Animator transition;
+    public Animator deathScreen;
 
     [System.Serializable]
     public enum SceneType
@@ -91,17 +93,63 @@ public class LevelLoader : MonoBehaviour
 
     public void LoadScene(LevelLoader.SceneType scene)
     {
-        int tipInt = Random.Range(0, tips.Length);
-        newTip = tips[tipInt];
-        Player.instance.tip = newTip;
+        
+        if (Player.instance.current_health <= 0)
+        {
+            int tipInt = Random.Range(0, tips.Length);
+            newTip = tips[tipInt];
+            Player.instance.tip = newTip;
 
-        tip.text = newTip.tip;
-        title.text = newTip.title;
-        icon.sprite = newTip.icon;
+            tip.text = newTip.tip;
+            title.text = newTip.title;
+            icon.sprite = newTip.icon;
 
-        int m_Scene = (int)sceneTable[scene];
-        StartCoroutine(LoadLevel(m_Scene));
-        Debug.Log("loading scene" + scene + "," + (int)sceneTable[scene]);
+            int m_Scene = (int)sceneTable[scene];
+            StartCoroutine(DeathScreen(m_Scene));
+            Debug.Log("loading scene" + scene + "," + (int)sceneTable[scene]);
+        }
+        else
+        {
+            int tipInt = Random.Range(0, tips.Length);
+            newTip = tips[tipInt];
+            Player.instance.tip = newTip;
+
+            tip.text = newTip.tip;
+            title.text = newTip.title;
+            icon.sprite = newTip.icon;
+
+            int m_Scene = (int)sceneTable[scene];
+            StartCoroutine(LoadLevel(m_Scene));
+            Debug.Log("loading scene" + scene + "," + (int)sceneTable[scene]);
+        }
+
+    }
+
+
+    IEnumerator DeathScreen(int levelIndex)
+    {
+
+
+        deathScreen.SetBool("Fade In", true);
+        deathScreen.SetBool("Fade Out", false);
+        yield return new WaitForSeconds(transitionTime+5);
+        Player.instance.current_health = Player.instance.max_health / 2;
+        AsyncOperation operation = SceneManager.LoadSceneAsync(levelIndex);
+        //operation.allowSceneActivation = false;
+        while (!operation.isDone)
+        {
+            Debug.Log("Loading progress: " + (operation.progress * 100) + "%");
+            yield return null;
+        }
+        if (operation.isDone)
+        {
+            deathScreen.SetBool("Fade In", false);
+            deathScreen.SetBool("Fade Out", true);
+            yield return new WaitForSeconds(1);
+            //operation.allowSceneActivation = true;
+            transition.SetBool("Fade In", false);
+            transition.SetBool("Fade Out", true);
+        }
 
     }
 

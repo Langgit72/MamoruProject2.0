@@ -76,7 +76,7 @@ public class Panel : MonoBehaviour
         canvasGroup.alpha = 1f;
         canvasGroup.blocksRaycasts = true;
         Inventory.instance.isHidden = false;
-        Time.timeScale = 0.6f;
+        Time.timeScale = 0.4f;
     }
 
 }

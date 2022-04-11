@@ -158,4 +158,4 @@ MonoBehaviour:
     shu_cost: 5
     ryo_cost: 0
   m_type: 2
-  recovery: 5
+  recovery: 25

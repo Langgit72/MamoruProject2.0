@@ -14,6 +14,7 @@ public class WalkingAI : MonoBehaviour
     public bool aggro=false;
     public CanvasGroup barGroup;
     public float attackCoolOff;
+    public float strength;
     private float lastCoolTime;
 
     private float randSeed;
@@ -188,11 +189,8 @@ public class WalkingAI : MonoBehaviour
 
     IEnumerator Damage()
     {
-        yield return new WaitForSeconds(1f);
-        Player.instance.TakeDamage(5);
-      
-
-
+        yield return new WaitForSeconds(0.1f);
+        Player.instance.TakeDamage(strength);
     }
 
     IEnumerator Attack()
@@ -200,27 +198,8 @@ public class WalkingAI : MonoBehaviour
         Collider2D[] players = Physics2D.OverlapCircleAll(transform.position, k_attackRadius, enemyLayers);
         for (int i = 0; i < players.Length; i++)
         {
-            Player.instance.Launch(5, m_sprite.flipX);
+            Player.instance.Launch(strength, m_sprite.flipX);
             StartCoroutine(Damage());
-            /*if (!hasAttacked)
-            {
-                hasAttacked = true;
-               
-            }*/
-
-            /*
-            if (players[i].gameObject != gameObject)
-            {
-                if (!hasAttacked)
-                {
-                    Player.instance.TakeDamage(5, m_sprite.flipX);
-                    hasAttacked = true;
-                    StartCoroutine(Damage());
-                }
-
-            }
-            */
-
         }
         yield return new WaitForSeconds(5);
 

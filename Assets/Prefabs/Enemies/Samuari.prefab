@@ -157,9 +157,9 @@ MonoBehaviour:
   mon: {fileID: 3489289745142711228, guid: 8fba45d8801754ca1977506a63b5a99b, type: 3}
   shu: {fileID: 2930204143132991540, guid: 86ac86acdf69d4c8186c4041bd4e9148, type: 3}
   ryo: {fileID: 7768703820127873773, guid: 39003d63413a74edb9948afe4fdc3f1a, type: 3}
-  drop1: {fileID: 2553756051925975604, guid: c7c21e6837c4444edac324c270dd30a7, type: 3}
-  drop2: {fileID: 845977481833652497, guid: 0c7df4a40f4484c81b91766856c4baf7, type: 3}
-  drop3: {fileID: 3769576862089064682, guid: cc59bc4e8605c4640b010ddbb5a59047, type: 3}
+  drop1: {fileID: 1445712086980369330, guid: f84260d40d1ac43938e4051c99d4b956, type: 3}
+  drop2: {fileID: 0}
+  drop3: {fileID: 7906767261759438768, guid: 8a3d550f14dc54acfa9495901f590a23, type: 3}
 --- !u!114 &-3962991771992814463
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,6 +180,7 @@ MonoBehaviour:
   aggro: 0
   barGroup: {fileID: 5493156391182079688}
   attackCoolOff: 2.5
+  strength: 10
   fadingIn: 0
   fadingOut: 0
   flip: 0
